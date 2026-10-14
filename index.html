@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol Q&A - Busca Direta na Web</title>
+    <!-- Ícones Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fundo-3d-decorativo">
+        <div class="esfera esfera-1"></div>
+        <div class="esfera esfera-2"></div>
+    </div>
+
+    <main class="modal-container">
+        <header class="modal-header">
+            <div class="icone-futebol">
+                <i data-lucide="trophy"></i>
+            </div>
+            <h1>Futebol Q&A</h1>
+            <p>Busca instantânea via DuckDuckGo e Web sem sair da página</p>
+        </header>
+
+        <section class="caixa-perguntas-rapidas">
+            <h3>Perguntas Rápidas (Busca Direta):</h3>
+            <div id="caixa-botoes-perguntas" class="grid-perguntas">
+                <!-- Botões de atalho gerados dinamicamente -->
+            </div>
+        </section>
+
+        <section class="caixa-busca">
+            <input type="text" id="input-pergunta" placeholder="Digite sua pergunta (ex: quem ganhou a Champions?)..." autocomplete="off">
+            <button id="btn-perguntar" class="btn-3d">
+                <i data-lucide="search"></i>
+                <span>Pesquisar</span>
+            </button>
+        </section>
+
+        <section class="caixa-resultado" id="caixa-resultado">
+            <div class="resultado-header">
+                <h2><i data-lucide="globe"></i> Resposta da Busca</h2>
+                <button id="btn-ouvir" class="btn-voz-3d" title="Ouvir Notícia">
+                    <i data-lucide="volume-2" id="icone-voz"></i>
+                    <span id="texto-btn-voz">Ouvir</span>
+                </button>
+            </div>
+            <p id="texto-resultado" class="texto-resultado">
+                Escreva sua pergunta ou clique em uma opção acima para obter a resposta e o link da notícia na mesma tela.
+            </p>
+            <div id="container-link-noticia" class="container-link">
+                <!-- O link direto da fonte é inserido aqui -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
